@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Создание_текстбокса_и_надписи
+namespace create_label_and_textbox
 {
     public partial class Form1 : Form
     {
@@ -21,15 +21,19 @@ namespace Создание_текстбокса_и_надписи
         int y = 120;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(textBox2.Text) > 100)
+            string textBox1Text = textBox1.Text;
+            string Kolvo4icel = textBox2.Text;
+            //проверка на правильный ввод
+            if (Convert.ToInt32(Kolvo4icel) > 100)
             {
                 MessageBox.Show("Чел, число от 0 до 100");
             }
             else
             {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-                for (int i = a; i <= a + b - 1; i++)
+                int Start4islo = Convert.ToInt32(textBox1Text);
+                int Kolvo4isel = Convert.ToInt32(Kolvo4icel);
+                //цикл создающий надписи
+                for (int i = Start4islo; i <= Start4islo + Kolvo4isel - 1; i++)
                 {
                     y += 30;
                     Label label3 = new Label()
@@ -41,6 +45,7 @@ namespace Создание_текстбокса_и_надписи
                         Font = new Font("Microsoft Sans Serif", 10)
                     };
                     Controls.Add(label3);
+                    //цикл создающий текстбоксы
                     System.Windows.Forms.TextBox textBox3 = new System.Windows.Forms.TextBox()
                     {
 
@@ -52,20 +57,20 @@ namespace Создание_текстбокса_и_надписи
                 }
             }
         }
-
+        //цикл подсчитывающий сумму всех текстбоксов
         private void button2_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
+            int Start4islo = Convert.ToInt32(textBox1.Text);
+            int Kolvo4isel = Convert.ToInt32(textBox2.Text);
             sum = 0;
-            for (int i = a; i <= a + b - 1; i++)
+            for (int i = Start4islo; i <= Start4islo + Kolvo4isel - 1; i++)
             {
-                System.Windows.Forms.TextBox t = (System.Windows.Forms.TextBox)this.Controls.Find("t" + i, true)[0];
-                sum += Convert.ToInt32(t.Text);
+                System.Windows.Forms.TextBox chislo = (System.Windows.Forms.TextBox)this.Controls.Find("t" + i, true)[0];
+                sum += Convert.ToInt32(chislo.Text);
             }
             button2.Text = Convert.ToString(sum);
         }
-
+        //функции непозволяющие вводить ничего кроме чисел в текстбоксы
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;

@@ -1,4 +1,4 @@
-﻿namespace Создание_текстбокса_и_надписи
+﻿namespace create_label_and_textbox
 {
     partial class Form1
     {
