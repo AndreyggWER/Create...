@@ -40,6 +40,7 @@
             // 
             // textBoxStartNumber
             // 
+            this.textBoxStartNumber.AcceptsReturn = true;
             this.textBoxStartNumber.Location = new System.Drawing.Point(183, 12);
             this.textBoxStartNumber.Name = "textBoxStartNumber";
             this.textBoxStartNumber.Size = new System.Drawing.Size(100, 20);
