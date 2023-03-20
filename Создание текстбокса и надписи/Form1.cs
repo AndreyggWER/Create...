@@ -22,16 +22,16 @@ namespace create_label_and_textbox
         private void textBoxStartNumber_Click(object sender, EventArgs e)
         {
             int StartNumber = Convert.ToInt32(textBoxStartNumber.Text);
-            int quantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
+            int QuantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
             //проверка на правильный ввод
-            if (Convert.ToInt32(quantityNumber) > 100)
+            if (Convert.ToInt32(QuantityNumber) > 100)
             {
                 MessageBox.Show("Чел, число от 0 до 100");
             }
             else
             {
                 //цикл создающий надписи
-                for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
+                for (int i = StartNumber; i <= StartNumber + QuantityNumber - 1; i++)
                 {
                     y += 30;
                     Label labelGenerate = new Label()
@@ -59,9 +59,9 @@ namespace create_label_and_textbox
         private void SumButton_Click(object sender, EventArgs e)
         {
             int StartNumber = Convert.ToInt32(textBoxStartNumber.Text);
-            int quantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
+            int QuantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
             sum = 0;
-            for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
+            for (int i = StartNumber; i <= StartNumber + QuantityNumber - 1; i++)
             {
                 System.Windows.Forms.TextBox chislo = (System.Windows.Forms.TextBox)this.Controls.Find("t" + i, true)[0];
                 sum += Convert.ToInt32(chislo.Text);
