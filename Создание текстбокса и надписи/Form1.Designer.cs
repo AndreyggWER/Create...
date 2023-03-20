@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.SumButton = new System.Windows.Forms.Button();
+            this.ButtonSum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxStartNumber
@@ -88,17 +88,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.textBoxStartNumber_Click);
             // 
-            // SumButton
+            // ButtonSum
             // 
-            this.SumButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.SumButton.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SumButton.Location = new System.Drawing.Point(15, 80);
-            this.SumButton.Name = "SumButton";
-            this.SumButton.Size = new System.Drawing.Size(121, 22);
-            this.SumButton.TabIndex = 6;
-            this.SumButton.Text = "Подсчитать сумму";
-            this.SumButton.UseVisualStyleBackColor = false;
-            this.SumButton.Click += new System.EventHandler(this.SumButton_Click);
+            this.ButtonSum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ButtonSum.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSum.Location = new System.Drawing.Point(15, 80);
+            this.ButtonSum.Name = "ButtonSum";
+            this.ButtonSum.Size = new System.Drawing.Size(121, 22);
+            this.ButtonSum.TabIndex = 6;
+            this.ButtonSum.Text = "Подсчитать сумму";
+            this.ButtonSum.UseVisualStyleBackColor = false;
+            this.ButtonSum.Click += new System.EventHandler(this.ButtonSum_Click);
             // 
             // FormGenerationNumber
             // 
@@ -106,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.SumButton);
+            this.Controls.Add(this.ButtonSum);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,7 +127,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button SumButton;
+        private System.Windows.Forms.Button ButtonSum;
     }
 }
 
