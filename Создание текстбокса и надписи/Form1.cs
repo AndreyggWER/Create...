@@ -58,7 +58,7 @@ namespace create_label_and_textbox
             }
         }
         //цикл подсчитывающий сумму всех текстбоксов
-        private void button2_Click(object sender, EventArgs e)
+        private void SumButton_Click(object sender, EventArgs e)
         {
             int StartNumber = Convert.ToInt32(textBoxStartNumber.Text);
             int quantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
@@ -68,10 +68,10 @@ namespace create_label_and_textbox
                 System.Windows.Forms.TextBox chislo = (System.Windows.Forms.TextBox)this.Controls.Find("t" + i, true)[0];
                 sum += Convert.ToInt32(chislo.Text);
             }
-            button2.Text = Convert.ToString(sum);
+            SumButton.Text = Convert.ToString(sum);
         }
         //функции непозволяющие вводить ничего кроме чисел в текстбоксы
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxStartNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
 
@@ -81,7 +81,7 @@ namespace create_label_and_textbox
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxQuantityNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number))

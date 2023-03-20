@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SumButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxStartNumber
@@ -44,7 +44,7 @@
             this.textBoxStartNumber.Name = "textBoxStartNumber";
             this.textBoxStartNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxStartNumber.TabIndex = 0;
-            this.textBoxStartNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.textBoxStartNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartNumber_KeyPress);
             // 
             // contextMenuStrip1
             // 
@@ -57,7 +57,7 @@
             this.textBoxQuantityNumber.Name = "textBoxQuantityNumber";
             this.textBoxQuantityNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxQuantityNumber.TabIndex = 2;
-            this.textBoxQuantityNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBoxQuantityNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxQuantityNumber_KeyPress);
             // 
             // label1
             // 
@@ -87,17 +87,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // SumButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(15, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 22);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Подсчитать сумму";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SumButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.SumButton.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SumButton.Location = new System.Drawing.Point(15, 80);
+            this.SumButton.Name = "SumButton";
+            this.SumButton.Size = new System.Drawing.Size(121, 22);
+            this.SumButton.TabIndex = 6;
+            this.SumButton.Text = "Подсчитать сумму";
+            this.SumButton.UseVisualStyleBackColor = false;
+            this.SumButton.Click += new System.EventHandler(this.SumButton_Click);
             // 
             // FormGenerationNumber
             // 
@@ -105,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.SumButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -126,7 +126,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SumButton;
     }
 }
 
