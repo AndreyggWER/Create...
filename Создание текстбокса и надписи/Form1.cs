@@ -19,7 +19,7 @@ namespace create_label_and_textbox
         }
         int sum = 0;
         int y = 120;
-        private void button1_Click(object sender, EventArgs e)
+        private void textBoxStartNumber_Click(object sender, EventArgs e)
         {
             string StartNumber1 = textBoxStartNumber.Text;
             string quantityNumber1 = textBoxQuantityNumber.Text;
