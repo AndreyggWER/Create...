@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace create_label_and_textbox
 {
-    public partial class Form1 : Form
+    public partial class FormGenerationNumber : Form
     {
-        public Form1()
+        public FormGenerationNumber()
         {
             InitializeComponent();
         }
@@ -21,17 +21,17 @@ namespace create_label_and_textbox
         int y = 120;
         private void button1_Click(object sender, EventArgs e)
         {
-            string textBox1Text = textBox1.Text;
-            string Kolvo4icel = textBox2.Text;
+            string StartNumber1 = textBoxStartNumber.Text;
+            string quantityNumber1 = textBoxQuantityNumber.Text;
             //проверка на правильный ввод
-            if (Convert.ToInt32(Kolvo4icel) > 100)
+            if (Convert.ToInt32(quantityNumber1) > 100)
             {
                 MessageBox.Show("Чел, число от 0 до 100");
             }
             else
             {
-                int StartNumber = Convert.ToInt32(textBox1Text);
-                int quantityNumber = Convert.ToInt32(Kolvo4icel);
+                int StartNumber = Convert.ToInt32(StartNumber1);
+                int quantityNumber = Convert.ToInt32(quantityNumber1);
                 //цикл создающий надписи
                 for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
                 {
@@ -60,8 +60,8 @@ namespace create_label_and_textbox
         //цикл подсчитывающий сумму всех текстбоксов
         private void button2_Click(object sender, EventArgs e)
         {
-            int StartNumber = Convert.ToInt32(textBox1.Text);
-            int quantityNumber = Convert.ToInt32(textBox2.Text);
+            int StartNumber = Convert.ToInt32(textBoxStartNumber.Text);
+            int quantityNumber = Convert.ToInt32(textBoxQuantityNumber.Text);
             sum = 0;
             for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
             {

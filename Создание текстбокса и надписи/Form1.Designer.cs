@@ -1,6 +1,6 @@
 ﻿namespace create_label_and_textbox
 {
-    partial class Form1
+    partial class FormGenerationNumber
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxStartNumber = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxQuantityNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxStartNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.textBoxStartNumber.Location = new System.Drawing.Point(183, 12);
+            this.textBoxStartNumber.Name = "textBoxStartNumber";
+            this.textBoxStartNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStartNumber.TabIndex = 0;
+            this.textBoxStartNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // textBoxQuantityNumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBoxQuantityNumber.Location = new System.Drawing.Point(183, 35);
+            this.textBoxQuantityNumber.Name = "textBoxQuantityNumber";
+            this.textBoxQuantityNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxQuantityNumber.TabIndex = 2;
+            this.textBoxQuantityNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label1
             // 
@@ -99,7 +99,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // FormGenerationNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,9 +109,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.textBoxQuantityNumber);
+            this.Controls.Add(this.textBoxStartNumber);
+            this.Name = "FormGenerationNumber";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,9 +120,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxStartNumber;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxQuantityNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
