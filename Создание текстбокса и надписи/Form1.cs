@@ -30,10 +30,10 @@ namespace create_label_and_textbox
             }
             else
             {
-                int Start4islo = Convert.ToInt32(textBox1Text);
-                int Kolvo4isel = Convert.ToInt32(Kolvo4icel);
+                int StartNumber = Convert.ToInt32(textBox1Text);
+                int quantityNumber = Convert.ToInt32(Kolvo4icel);
                 //цикл создающий надписи
-                for (int i = Start4islo; i <= Start4islo + Kolvo4isel - 1; i++)
+                for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
                 {
                     y += 30;
                     Label label3 = new Label()
@@ -60,10 +60,10 @@ namespace create_label_and_textbox
         //цикл подсчитывающий сумму всех текстбоксов
         private void button2_Click(object sender, EventArgs e)
         {
-            int Start4islo = Convert.ToInt32(textBox1.Text);
-            int Kolvo4isel = Convert.ToInt32(textBox2.Text);
+            int StartNumber = Convert.ToInt32(textBox1.Text);
+            int quantityNumber = Convert.ToInt32(textBox2.Text);
             sum = 0;
-            for (int i = Start4islo; i <= Start4islo + Kolvo4isel - 1; i++)
+            for (int i = StartNumber; i <= StartNumber + quantityNumber - 1; i++)
             {
                 System.Windows.Forms.TextBox chislo = (System.Windows.Forms.TextBox)this.Controls.Find("t" + i, true)[0];
                 sum += Convert.ToInt32(chislo.Text);
